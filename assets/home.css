@@ -1,0 +1,105 @@
+section{
+	padding: 100px 11% 90px;
+}
+.home{
+	height: 100vh;
+	width: 100%;
+	background-image: url();
+	background-color: var(--bg-color);
+	background-size: cover;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 1.5rem;
+}
+.home-img img{
+	width: 100%;
+	height: auto;
+}
+.home-text h4{
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--main-color);
+}
+
+/*destaques*/
+
+.destaques{
+	margin-top: 3.5rem;
+}
+.conteudo-destaques{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	gap: 6rem;
+	align-items: center;
+	text-align: center;
+	margin-top: 5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.caixa{
+	position: relative;
+}
+.caixa-img img{
+	width: 70%;
+	height: auto;
+	border-radius: 20px;
+	margin-top: -5rem;
+	margin-left: 0.5rem;
+	margin-bottom: 1.2rem;
+	transition: all .45s ease;
+}
+
+.caixa:hover{
+	transform: scale(1.01) translateY(-5px);
+	cursor: pointer;
+	transition: all .60s ease;
+}
+
+.contato{
+	width: 100%;
+	text-align: center;
+	margin-top: -8rem;
+}
+
+.contato img{
+	width: 35%;
+}
+
+
+@media (max-width: 970px){
+	:root{
+	  --h1-font: 4.2rem;
+	  --h2-font: 2.9rem;
+	  --p-font: 1rem;
+	}
+	section{
+		padding: 150px 3% 60px;
+	}
+	.home{
+		height: 85vh;
+	}
+	
+	.contato{
+		grid-template-columns: 1fr;
+	}
+	.footer .principal{
+		grid-template-columns: 1fr;
+		column-gap: 5px;
+	}
+}
+
+@media (max-width: 940px){
+	.home{
+		grid-template-columns: 1fr;
+		text-align: center;
+		height: 117vh;
+	}
+	
+	.icons i{
+		margin-right: 15px;
+		margin-left: 5px;
+	}
+}

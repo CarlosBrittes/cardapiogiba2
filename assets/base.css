@@ -1,0 +1,137 @@
+/*principal*/
+
+/*
+Verde escuro: #00230d
+Verde claro: #008157
+Creme: #eff8a0*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* largura da scroll */
+	border: 1px;
+	border-color: #008157;
+	
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #eff8a0;        /* cor da borda */
+	border: solid 2px;
+	border-color: #00230d;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #008157;    /* cor da scroll */
+    border-radius: 20px;       /* borda da scroll */
+  }
+
+:root{
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+section{
+	padding: 160px 10% 90px;
+}
+
+footer {
+	padding: 160px 10% 90px;
+}
+
+footer img{
+	text-align: center;
+}
+
+.middle-text h2{
+	font-size: var(--h2-font);
+	color: var(--text-color);
+	font-weight: 600;
+}
+span{
+	color: var(--main-color);
+}
+
+header{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: transparent;
+	padding: 17px 11%;
+	transition: all .45s ease;
+	
+}
+
+header.sticky{
+	background-color: #008157;
+	padding: 14px 11%;
+	box-shadow: 0 2px 2px -2px gray;
+}
+
+.logo img{
+	width: 70%;
+	height: auto;
+}
+
+/*home*/
+body{
+	background-image: url(img/cardapio/FUNDO.png);
+	background-size: cover;
+}
+
+/*Responsividade*/
+@media (max-width: 1400px) {
+	section{
+		padding: 130px 3% 60px;
+	}
+	footer {
+		padding: 130px 3% 60px;
+	}
+	.home{
+		height: 70vh;
+		background-size: cover;
+	}
+}
+
+@media (max-width: 1325px){
+	header{
+		padding: 16px 3%;
+	}
+	header.sticky{
+		padding: 8px 3%;
+	}
+}
+
+@media (max-width: 1200px){
+	#menu-icon{
+		display: initial;
+		height: 50px;
+		width: 50px;
+		background: var(--bg-color);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		color: var(--main-color);
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 770px) {
+	.principal {
+		flex-direction: column;
+		gap: 15px;
+	}
+}
