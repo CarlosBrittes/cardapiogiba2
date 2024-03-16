@@ -1,6 +1,25 @@
+@font-face {
+	font-family: 'Courier New', Courier, monospace;
+	src: url('assets/img/cardapio/._Bright Melody Display Typeface.otf');
+}
+
 section{
 	padding: 100px 11% 90px;
 }
+header{
+	display: grid;
+	grid-template-columns: auto;
+}
+
+header a{
+	color: #eff8a0;
+	
+}
+
+.pedido-imagem{
+	margin-top: -2rem;
+}
+
 .home{
 	height: 100vh;
 	width: 100%;
@@ -26,7 +45,7 @@ section{
 /*destaques*/
 
 .destaques{
-	margin-top: 3.5rem;
+	margin-top: 6.5rem;
 }
 .conteudo-destaques{
 	display: grid;
