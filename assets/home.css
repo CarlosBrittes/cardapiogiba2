@@ -126,6 +126,11 @@ header a{
 
 	.pedido-imagem{
 		text-align: center;
+		margin-left: -1.2rem;
+	}
+
+	.pedido-imagem .pedidosimg{
+		width: 70%;
 	}
 	
 	.icons i{
