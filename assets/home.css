@@ -119,6 +119,11 @@ header a{
 		text-align: center;
 		height: 117vh;
 	}
+
+	.pedido-imagem{
+		margin-left: -1.5rem;
+		text-align: center;
+	}
 	
 	.icons i{
 		margin-right: 15px;
